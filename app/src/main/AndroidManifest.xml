@@ -12,30 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCVBuilderApp"
         tools:targetApi="31">
-<!--        <activity-->
-<!--            android:name=".CVPreviewActivity"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".ReferencesActivity"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".CertificationsActivity"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".ExperienceActivity"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".EducationActivity"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".SummaryActivity"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".PersonalDetailsActivity"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".ProfileActivity"-->
-<!--            android:exported="false" />-->
         <activity android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
@@ -44,8 +20,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".MainActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ProfileActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".PersonalDetailsActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".SummaryActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".EducationActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ExperienceActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".CertificationsActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ReferencesActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".CVPreviewActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
     </application>
 
 </manifest>

@@ -1,10 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/resume_background"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- FrameLayout for logo with background circle -->
+    <FrameLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/circle_background" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+    </FrameLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CV Builder"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
+
+    <!-- LinearLayout to hold buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnProfilePic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Picture"
+            android:background="@drawable/rounded_button"/>
+
+        <Button
+            android:id="@+id/btnPersonalDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Details"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnSummary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Summary"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnEducation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Education"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnExperience"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Experience"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnCertifications"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Certifications"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnReferences"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="References"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
