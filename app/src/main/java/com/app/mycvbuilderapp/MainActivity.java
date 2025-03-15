@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnSummary).setOnClickListener(v -> openActivity(SummaryActivity.class));
         findViewById(R.id.btnEducation).setOnClickListener(v -> openActivity(EducationActivity.class));
         findViewById(R.id.btnExperience).setOnClickListener(v -> openActivity(ExperienceActivity.class));
+        findViewById(R.id.btnCertifications).setOnClickListener(v -> openActivity(CertificationsActivity.class));
         findViewById(R.id.btnReferences).setOnClickListener(v -> openActivity(ReferencesActivity.class));
     }
 
