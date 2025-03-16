@@ -17,7 +17,8 @@ The **CV Builder Application** is an Android app developed in **Java** that demo
   - **Summary**
   - **Education**
   - **Experience**
-  - **Certifications & References**
+  - **Certifications**
+  -  **References**
 - Each option is **clickable** and navigates to its respective **data entry screen** using **Explicit Intents**.
 
 ### 3️⃣ Data Entry Screens
