@@ -104,5 +104,17 @@
             android:background="@drawable/rounded_button"
             android:layout_marginTop="10dp"/>
     </LinearLayout>
+    <!-- Previous Button -->
+    <ImageButton
+        android:id="@+id/btnPreview"
+        android:layout_width="71dp"
+        android:layout_height="79dp"
+        android:layout_gravity="right"
+        android:src="@drawable/baseline_arrow_forward_24"
+        android:background="@drawable/circle_background"
+        android:padding="0dp"
+        android:elevation="4dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerInside"/>
 
 </LinearLayout>
