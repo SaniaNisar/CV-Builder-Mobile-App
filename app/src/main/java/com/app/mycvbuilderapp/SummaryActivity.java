@@ -63,6 +63,9 @@ public class SummaryActivity extends AppCompatActivity {
 
         // Cancel button: discard changes and go back to Home Screen
         btnCancel.setOnClickListener(v -> {
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.clear();
+            editor.apply();
             Toast.makeText(this, "Changes Discarded", Toast.LENGTH_SHORT).show();
 
             // Navigate back to Home Screen
