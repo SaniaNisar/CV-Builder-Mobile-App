@@ -1,10 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExperienceActivity">
+    android:padding="16dp"
+    android:background="@drawable/resume_background"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work Experience"
+            android:layout_marginTop="60dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Employer Name"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Company Name -->
+        <EditText
+            android:id="@+id/etCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Company Name"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Designation"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Designation -->
+        <EditText
+            android:id="@+id/etDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Designation"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <!-- Start Date Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Date"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerStartMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/rounded_edittext"/>
+
+            <Spinner
+                android:id="@+id/spinnerStartYear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rounded_edittext"/>
+        </LinearLayout>
+
+        <!-- End Date Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Date"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerEndMonth"
+                android:layout_width="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edittext"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerEndYear"
+                android:layout_width="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edittext"/>
+        </LinearLayout>
+
+        <!-- Checkboxes for Additional Options -->
+        <CheckBox
+            android:id="@+id/chkPresent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Present (Current)"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="50dp">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_button1"
+                android:text="Save"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:background="@drawable/rounded_button1"
+                android:text="Cancel"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
