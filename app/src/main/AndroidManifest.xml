@@ -6,11 +6,9 @@
         android:name="android.hardware.camera"
         android:required="false" />
 
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -35,7 +33,7 @@
         </activity>
 
         <!-- Main Activities -->
-        <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:exported="false" />
         <activity android:name=".ProfileActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".PersonalDetailsActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".SummaryActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
