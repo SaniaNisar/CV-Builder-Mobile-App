@@ -23,7 +23,7 @@ public class CertificationsActivity extends AppCompatActivity {
     private Button btnSave, btnCancel;
     private SharedPreferences sharedPreferences;
 
-    private static final String PREF_NAME = "UserPreferences";
+    private static final String PREF_NAME = "CertificationsPrefs";
     private static final String KEY_COURSE_PROVIDER = "course_provider";
     private static final String KEY_COURSE_NAME = "course_name";
     private static final String KEY_SPINNER_YEAR= "certification_year";

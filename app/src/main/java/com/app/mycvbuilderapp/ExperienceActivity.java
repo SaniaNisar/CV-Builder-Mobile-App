@@ -24,9 +24,9 @@ public class ExperienceActivity extends AppCompatActivity {
     private Button btnSave, btnCancel;
     private SharedPreferences sharedPreferences;
 
-    private static final String PREF_NAME = "UserPreferences";
+    private static final String PREF_NAME = "ExperiencePrefs";
     private static final String KEY_COMPANY = "company_name";
-    private static final String KEY_DESIGNATION = "designation";
+    private static final String KEY_JOB_DESIGNATION = "designation";
     private static final String KEY_START_MONTH = "start_month";
     private static final String KEY_START_YEAR = "start_year";
     private static final String KEY_END_MONTH = "end_month";
@@ -107,7 +107,7 @@ public class ExperienceActivity extends AppCompatActivity {
         // Save data in SharedPreferences
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(KEY_COMPANY, companyName);
-        editor.putString(KEY_DESIGNATION, designation);
+        editor.putString(KEY_JOB_DESIGNATION, designation);
         editor.putString(KEY_START_MONTH, startMonth);
         editor.putString(KEY_START_YEAR, startYear);
         editor.putString(KEY_END_MONTH, endMonth);
@@ -126,7 +126,7 @@ public class ExperienceActivity extends AppCompatActivity {
 
     private void loadSavedData() {
         etCompanyName.setText(sharedPreferences.getString(KEY_COMPANY, ""));
-        etDesignation.setText(sharedPreferences.getString(KEY_DESIGNATION, ""));
+        etDesignation.setText(sharedPreferences.getString(KEY_JOB_DESIGNATION, ""));
         spinnerStartMonth.setSelection(getSpinnerIndex(spinnerStartMonth, sharedPreferences.getString(KEY_START_MONTH, "")));
         spinnerStartYear.setSelection(getSpinnerIndex(spinnerStartYear, sharedPreferences.getString(KEY_START_YEAR, "")));
         spinnerEndMonth.setSelection(getSpinnerIndex(spinnerEndMonth, sharedPreferences.getString(KEY_END_MONTH, "")));

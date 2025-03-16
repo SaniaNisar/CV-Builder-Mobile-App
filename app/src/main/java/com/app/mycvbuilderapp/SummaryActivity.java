@@ -15,7 +15,7 @@ public class SummaryActivity extends AppCompatActivity {
     private EditText etSummary;
     private Button btnSave, btnCancel;
     private SharedPreferences sharedPreferences;
-    private static final String PREF_NAME = "UserPreferences";
+    private static final String PREF_NAME = "SummaryPrefs";
     private static final String KEY_SUMMARY = "summary_text";
 
     @Override

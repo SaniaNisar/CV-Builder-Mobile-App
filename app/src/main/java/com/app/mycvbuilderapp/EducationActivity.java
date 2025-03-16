@@ -16,7 +16,7 @@ public class EducationActivity extends AppCompatActivity {
     private Button btnSave, btnCancel;
     private SharedPreferences sharedPreferences;
 
-    private static final String PREF_NAME = "UserPreferences";
+    private static final String PREF_NAME = "EducationPrefs";
     private static final String KEY_INSTITUTION = "institution_name";
     private static final String KEY_DEGREE = "degree";
     private static final String KEY_YEAR = "year_of_completion";
