@@ -204,6 +204,7 @@ public class ProfileActivity extends AppCompatActivity {
         btnSave.setOnClickListener(v -> {
             if (sharedPreferences.contains(KEY_IMAGE_URI)) {
                 Toast.makeText(this, "Image saved successfully!", Toast.LENGTH_SHORT).show();
+                navigateBackToHome();
             } else {
                 Toast.makeText(this, "Please select an image first", Toast.LENGTH_SHORT).show();
             }

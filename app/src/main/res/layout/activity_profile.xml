@@ -17,6 +17,7 @@
             android:layout_height="350dp"
             android:src="@drawable/icon_profilepic"
             android:id="@+id/ivProfilePic"
+            android:scaleType="centerCrop"
             android:layout_centerInParent="true"
             />
 

@@ -74,7 +74,7 @@ public class CVPreviewActivity extends AppCompatActivity {
     private static final String CERTIFICATIONS_PREFS = "CertificationsPrefs";
     private static final String REFERENCES_PREFS = "ReferencesPrefs";
 
-    private static final String KEY_IMAGE_URI = "profile_image_uri";
+    private static final String KEY_IMAGE_URI = "imageUri";
     private static final String KEY_NAME = "name";
     private static final String KEY_EMAIL = "email";
     private static final String KEY_PHONE = "phone";
@@ -84,9 +84,16 @@ public class CVPreviewActivity extends AppCompatActivity {
     private static final String KEY_YEAR = "year_of_completion";
     private static final String KEY_COMPANY = "company_name";
     private static final String KEY_POSITION = "designation";
-    private static final String KEY_DURATION = "duration";
-    private static final String KEY_CERTIFICATE = "certificate";
-    private static final String KEY_REFERENCE = "reference";
+    private static final String KEY_START_MONTH = "start_month";
+    private static final String KEY_START_YEAR = "start_year";
+    private static final String KEY_END_MONTH = "end_month";
+    private static final String KEY_END_YEAR = "end_year";
+    private static final String KEY_COURSE_PROVIDER = "course_provider";
+    private static final String KEY_COURSE_NAME = "course_name";
+    private static final String KEY_SPINNER_YEAR= "certification_year";
+    private static final String KEY_USER_NAME = "user_name";
+    private static final String KEY_DESIGNATION = "user_designation";
+    private static final String KEY_CONTACT = "user_contact";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -139,9 +146,9 @@ public class CVPreviewActivity extends AppCompatActivity {
         txtPhone.setText(personalPrefs.getString(KEY_PHONE, "Not Available"));
         txtSummary.setText(summaryPrefs.getString(KEY_SUMMARY, "Not Provided"));
         txtEducation.setText(educationPrefs.getString(KEY_INSTITUTION, "Institution: N/A") + "\n" + educationPrefs.getString(KEY_DEGREE, "Degree: N/A") + " (" + educationPrefs.getString(KEY_YEAR, "Year: N/A") + ")");
-        txtExperience.setText(experiencePrefs.getString(KEY_COMPANY, "Company: N/A") + "\n" + experiencePrefs.getString(KEY_POSITION, "Position: N/A") + "\n" + experiencePrefs.getString(KEY_DURATION, "Duration: N/A"));
-        txtCertifications.setText(certificationsPrefs.getString(KEY_CERTIFICATE, "No Certifications Available"));
-        txtReferences.setText(referencesPrefs.getString(KEY_REFERENCE, "References: Not Available"));
+        txtExperience.setText(experiencePrefs.getString(KEY_COMPANY, "Company: N/A") + "\n" + experiencePrefs.getString(KEY_POSITION, "Position: N/A") + "\n" + experiencePrefs.getString(KEY_START_MONTH, "Duration: N/A") + "," + experiencePrefs.getString(KEY_START_YEAR, "Duration: N/A") + " - " + experiencePrefs.getString(KEY_END_YEAR, "Duration: N/A") );
+        txtCertifications.setText(certificationsPrefs.getString(KEY_COURSE_NAME, "N/A")+ "\n" + certificationsPrefs.getString(KEY_COURSE_PROVIDER, "N/A") + "\n" + certificationsPrefs.getString(KEY_SPINNER_YEAR, "N/A"));
+        txtReferences.setText(referencesPrefs.getString(KEY_USER_NAME, "N/A")+ "\n" + "(" + referencesPrefs.getString(KEY_DESIGNATION, "Designation: N/A") + ")"+ "\n" + referencesPrefs.getString(KEY_CONTACT, "Contact: N/A"));
     }
 
     private void shareCV() {
